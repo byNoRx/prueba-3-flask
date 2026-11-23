@@ -59,4 +59,4 @@ def ejercicio2():
     return render_template('ejercicio2.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <h1>Formulario de Notas</h1>
     <form method="post">
+        <h1>Formulario de Notas</h1>
         <label for="nota1">Nota 1:<br>
              <input id="nota1" name="nota1" type="number" min="10" max="70" value="{{ nota1 }}" required>
         </label><br>
@@ -19,7 +20,7 @@
         <label for="asistencia">Asistencia (%):<br>
              <input id="asistencia" name="asistencia" type="number" min="0" max="100" value="{{ asistencia }}" required>
         </label><br>
-        <input type="submit" value="Enviar">
+        <input class="button" type="submit" value="Enviar">
 
         <p>{{ promedio }}</p>
         <p>{{ estado }}</p>

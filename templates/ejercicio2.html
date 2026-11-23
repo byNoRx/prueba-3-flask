@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    Ejercicio 2
+    <form method="post">
+        <h1>Formulario de nombres</h1>
+        <label for="nombre1">Nombre 1:<br>
+             <input id="nombre1" name="nombre1" type="text" value="{{ nombre1 }}" required>
+        </label><br>
+        <label for="nombre2">Nombre 2:<br>
+             <input id="nombre2" name="nombre2" type="text" value="{{ nombre2 }}" required>
+        </label><br>
+        <label for="nombre3">Nombre 3:<br>
+             <input id="nombre3" name="nombre3" type="text" value="{{ nombre3 }}" required>
+        </label><br>
+        <input class="button" type="submit" value="Enviar">
+
+        <p>{{ mensaje1 }}</p>
+        <p>{{ mensaje2 }}</p>
+    </form>
 </body>
 </html>
